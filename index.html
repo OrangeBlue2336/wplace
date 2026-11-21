@@ -246,7 +246,11 @@
 
     @media (min-width: 1200px) {
       .grid {
-        grid-template-columns: repeat(3, 1fr);
+        /* 기존 3열 카드 폭을 유지한 채, 두 카드만 가운데에 배치합니다. */
+        grid-template-columns: repeat(2, 1fr);
+        width: calc(66.666667% - 6px);
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
